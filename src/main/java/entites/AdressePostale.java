@@ -7,5 +7,13 @@ public class AdressePostale {
 	public String libelleVoie;
 	public int codePostal;
 	public String ville;
+	
+	public AdressePostale(int pNum,String pLibellevoie,int pCodePostal,String pVille){
+	
+		this.numeroRue = pNum;
+		this.libelleVoie = pLibellevoie;
+		this.codePostal = pCodePostal;
+		this.ville = pVille;
+	}
 
 }
