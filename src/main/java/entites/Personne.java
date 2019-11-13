@@ -36,15 +36,15 @@ public class Personne {
 	}
 	
 	
-	public String Nom (String pNom) {
+	public String getNom (String pNom) {
 		return pNom;
 	}
 	
-	public String Prenom (String pPrenom) {
+	public String getPrenom (String pPrenom) {
 		return pPrenom;
 	}
 	
-	public AdressePostale Adresse (AdressePostale pAdresse) {
+	public AdressePostale getAdresse (AdressePostale pAdresse) {
 		return pAdresse;
 	}
 	

@@ -37,7 +37,7 @@ public class TestPersonne {
 		
 		p2.AfficheNomPrenom();
 		
-		//String nom1 = p1.Nom("uuuu");
+		//String nom1 = p1.getNom("uuuu");
 		//System.out.println(nom1);
 		
 	}
