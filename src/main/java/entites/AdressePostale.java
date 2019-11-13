@@ -8,6 +8,8 @@ public class AdressePostale {
 	public int codePostal;
 	public String ville;
 	
+	public static int nbDepartement = 101;
+	
 	public AdressePostale(int pNum,String pLibellevoie,int pCodePostal,String pVille){
 	
 		this.numeroRue = pNum;

@@ -12,12 +12,42 @@ public class Personne {
 		this.prenom = pPrenom;
 	}
 	
-	
-
-	public Personne(String pNom,String pPrenom,AdressePostale pAdresse){
-		
+	public Personne (String pNom,String pPrenom,AdressePostale pAdresse){
 		this.nom = pNom;
 		this.prenom = pPrenom;
 		this.adresse = pAdresse;
 	}
+	
+	public void AfficheNomPrenom() {
+		System.out.println(this.nom.toUpperCase()+" "+this.prenom);
+	
+	}
+	
+	public void ModifNom(String newNom) {
+		this.nom = newNom;
+	}
+	
+	public void ModifPrenom(String newPrenom) {
+		this.prenom = newPrenom;
+	}
+	
+	public void ModifAdresse(AdressePostale newAdresse) {
+		this.adresse = newAdresse;
+	}
+	
+	
+	public String Nom (String pNom) {
+		return pNom;
+	}
+	
+	public String Prenom (String pPrenom) {
+		return pPrenom;
+	}
+	
+	public AdressePostale Adresse (AdressePostale pAdresse) {
+		return pAdresse;
+	}
+	
+	
+	
 }
