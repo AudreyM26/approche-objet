@@ -4,7 +4,7 @@ public class CompteTaux extends Compte {
 	
 	private double tauxRemuneration = 0;
 	
-	public CompteTaux(int pNumCompte,float pSoldeCompte, double pTaux ){
+	public CompteTaux(int pNumCompte,double pSoldeCompte, double pTaux ){
 
 		super(pNumCompte,pSoldeCompte);
 		this.tauxRemuneration = pTaux;

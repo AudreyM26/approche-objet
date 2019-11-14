@@ -7,11 +7,14 @@ public class Debit extends Operation {
 		super(dateOpe,montant);
 	}
 	
-	@Override
-	public String AfficherType() {
-		//System.out.println("Debit");
-		
-		return "Debit";
+	//afficher le type Debit
+	public void AfficherType() {
+		System.out.println("Debit");
 	}
 	
+	//recuperer le type : Debit
+	public String getType() {
+		// TODO Auto-generated method stub
+		return "Debit";
+	}
 }

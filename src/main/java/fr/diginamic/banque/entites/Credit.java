@@ -7,10 +7,14 @@ public class Credit extends Operation {
 		super(dateOpe,montant);
 	}
 
-	@Override
-	public String AfficherType() {
-		//System.out.println("Credit");
-		
+	//afficher le type : Credit
+	public void AfficherType() {
+		System.out.println("Credit");
+	}
+
+	//recuperer le type : Credit
+	public String getType() {
+		// TODO Auto-generated method stub
 		return "Credit";
 	}
 	

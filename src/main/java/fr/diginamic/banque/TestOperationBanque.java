@@ -1,10 +1,7 @@
 package fr.diginamic.banque;
 
-
-import java.text.DecimalFormat;
-
 import fr.diginamic.banque.entites.*;
-import java.text.DecimalFormat;
+
 
 
 public class TestOperationBanque {
@@ -24,23 +21,23 @@ public class TestOperationBanque {
 		
 		for(int i=0;i<tabOpe.length;i++){
 			
-			typeOpe = tabOpe[i].AfficherType();
+			typeOpe = tabOpe[i].getType();
 			
-			System.out.println(typeOpe+"\ndate d opération : "+tabOpe[i].getDateOpe()+" montant : "+tabOpe[i].getMontant()+"\n");
+			System.out.println(tabOpe[i]);
+			//tabOpe[i].AfficherType();
+			//System.out.println("date d opération : "+tabOpe[i].getDateOpe()+" montant : "+tabOpe[i].getMontant()+"\n");
 			
-			if(typeOpe == "Credit"){
+			if(typeOpe.equals("Credit")){
 				montantGlobal = montantGlobal+tabOpe[i].getMontant();
 			}else{
 				montantGlobal = montantGlobal-tabOpe[i].getMontant();
 			}
 			
 		}
-		
-		DecimalFormat df = new DecimalFormat("000.00");
-		
-		System.out.println("\nMontant global : "+df.format(montantGlobal)+"€");
-		
-		//System.out.println(montantGlobal);
+	
+		//afficher montant global
+		montantGlobal = Math.round(montantGlobal*100.00)/100.00;
+		System.out.println("\nMontant global : "+montantGlobal+"€");
 		
 	}
 }
