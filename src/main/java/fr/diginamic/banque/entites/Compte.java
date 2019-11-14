@@ -2,11 +2,11 @@ package fr.diginamic.banque.entites;
 
 public class Compte {
 
-	//private int numCompte =0;
-	//private float soldeCompte=0.0F;
+	//protected int numCompte =0;
+	//protected float soldeCompte=0.0F;
 	
-	protected int numCompte =0;
-	protected float soldeCompte=0.0F;
+	private int numCompte =0;
+	private float soldeCompte=0.0F;
 	
 	public Compte(int pNumCompte, float pSoldeCompte) {
 		this.numCompte = pNumCompte;
@@ -14,7 +14,7 @@ public class Compte {
 	}
 	
 	public String toString(){
-		return getNumCompte()+" "+getSoldeCompte();	
+		return "Numero de compte "+getNumCompte()+"\nSolde de compte : "+getSoldeCompte()+"€\n";	
 	}
 	
 	public int getNumCompte() {
