@@ -13,7 +13,7 @@ public class CompteTaux extends Compte {
 	
 	public String toString(){
 		String compte = super.toString();
-		return compte+"Taux de remuneration : "+getTauxRemuneration()+"%";	
+		return compte+" - Taux : "+getTauxRemuneration()+"%";	
 	}
 
 
