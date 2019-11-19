@@ -1,5 +1,6 @@
 package sets;
 
+import java.lang.Comparable;
 
 /***
  * Créez une classe Pays possédant 3 attributs : nom, nb d’habitants, PIB/habitant.
@@ -12,7 +13,7 @@ package sets;
  * @author audrey
  *
  */
-public class Pays {
+public class Pays implements Comparable<Pays> {
 
 	private String nom;
 	private int nbreHab;
@@ -32,10 +33,10 @@ public class Pays {
 
 	
 	public String toString(){
-		String texte = this.getNom()+" - hab : "+this.getNbreHab()+" - PIB total : "+this.totalPIB();
+		String texte = this.getNom()+" - hab : "+this.getNbreHab()+" - PIB/Hab : "+this.getPibParHab()+" - PIB total : "+this.totalPIB();
 		return texte;
 	}
-
+	
 	
 	public String getNom() {
 		return nom;
@@ -65,5 +66,16 @@ public class Pays {
 	public void setPibParHab(Double pibParHab) {
 		PibParHab = pibParHab;
 	}
+
+	//tri par nom ou par pib/hab
+	public int compareTo (Pays p2) {
+	
+		//tri par ordre alphabetique
+		return this.nom.compareTo(p2.getNom());
+		
+		//tri par PIB/hab
+		//return this.PibParHab.compareTo(p2.getPibParHab());
+	}
+	
 	
 }
