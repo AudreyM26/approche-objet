@@ -1,6 +1,5 @@
 package sets;
 
-import java.lang.Comparable;
 
 /***
  * Créez une classe Pays possédant 3 attributs : nom, nb d’habitants, PIB/habitant.
