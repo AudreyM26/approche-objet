@@ -28,17 +28,19 @@ public class TestListeString {
 		listVilles.addAll(initialeVille);
 
 		int wordMax = 0;
-
+		String villeWordMax = null;
+		
 		// trouver le mot le plus long
 		for (String ville : listVilles) {
 			// System.out.println(ville);
 
 			if (ville.length() > wordMax) {
 				wordMax = ville.length();
+				villeWordMax = ville;
 			}
 		}
 
-		System.out.println("Mot le plus long : " + wordMax);
+		System.out.println("Mot le plus long : " + villeWordMax+" ("+wordMax+" mots)");
 
 		//Mettre les villes en majuscule
 		for (int i = 0; i < listVilles.size(); i++) {
