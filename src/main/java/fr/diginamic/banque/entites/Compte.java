@@ -2,12 +2,14 @@ package fr.diginamic.banque.entites;
 
 import java.util.Arrays;
 
+import org.apache.commons.lang3.builder.EqualsBuilder;
+
 public class Compte {
 
 	//protected int numCompte =0;
 	//protected double soldeCompte=0.0F;
 	
-	private int numCompte =0;
+	private int numCompte;
 	private double soldeInitial=0.0;
 	private Operation[] tabOpeCompte = new Operation[2];
 	
@@ -101,6 +103,21 @@ public class Compte {
 		return 	texte;
 	}
 	
+	public boolean equals(Object obj){
+		
+		if (!(obj instanceof Compte)) {
+			return false;
+		}
+		
+		Compte autre = (Compte)obj;
+		
+		EqualsBuilder egalite = new EqualsBuilder().append(this.numCompte,autre.getNumCompte());
+		
+		//boolean egalite = this.numCompte== autre.getNumCompte() && this.soldeInitial==autre.getSoldeInitial();
+		return egalite != null;
+		
+		
+	}
 	
 	public int getNumCompte() {
 		return numCompte;

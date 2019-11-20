@@ -44,5 +44,18 @@ public class TestBanque {
 		soldeGlobal = Math.round(soldeGlobal*100.00)/100.00;
 		System.out.println("\nSolde global : "+soldeGlobal);
 		
+		
+		Compte compte1 = new Compte(14587,1500.23);
+		Compte compte2 = new Compte(14587,1500.23);
+		
+		System.out.println("compare compte1 et compte2 "+compte1.equals(compte2));
+	
+		Compte compte3 = compte2;
+		
+		System.out.println("compare compte2 et compte3 "+compte3.equals(compte2));
+		
+		System.out.println("\nPS:compare compte1 et compte2 retour false car pointe vers 2 zones mémoires différentes si equals non redéfinie dans Compte");
+		System.out.println("PS:compare compte2 et compte3 retour true car pointe vers la meme zone memoire si equals non redéfinie dans Compte");
+		
 	}
 }
