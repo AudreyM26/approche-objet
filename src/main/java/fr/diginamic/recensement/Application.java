@@ -59,11 +59,11 @@ public class Application {
 			}
 		}
 
-		System.out.println("La population de l'Hérault est : " + populationDpt + " hab\n");
-		System.out.println("La plus petite commune de l'Hérault est : " + petiteCommune + "\n");
+		System.out.println("La population de l'HÃ©rault est : " + populationDpt + " hab\n");
+		System.out.println("La plus petite commune de l'HÃ©rault est : " + petiteCommune + "\n");
 
 		// afficher les 10 plus grandes villes du departement 34
-		System.out.println("\nAfficher les 10 plus grandes villes de l'Hérault : ");
+		System.out.println("\nAfficher les 10 plus grandes villes de l'Hï¿½rault : ");
 		Collections.sort(listeVilleDpt, new ComparatorPlusGrandeVille());
 
 		for (int i = 0; i < 10; i++) {
@@ -71,14 +71,14 @@ public class Application {
 		}
 
 		// afficher les 10 plus petites villes du departement 34
-		System.out.println("\nAfficher les 10 plus petites villes de l'Hérault : ");
+		System.out.println("\nAfficher les 10 plus petites villes de l'Hï¿½rault : ");
 		Collections.sort(listeVilleDpt, new ComparatorPlusPetiteVille());
 
 		for (int i = 0; i < 10; i++) {
 			System.out.println(listeVilleDpt.get(i));
 		}
 
-		System.out.println("\nLa population totale de la région Occitanie : " + populationTotaleRegion + " hab.");
+		System.out.println("\nLa population totale de la rï¿½gion Occitanie : " + populationTotaleRegion + " hab.");
 
 		// afficher les 10 villes plus importantes de l Occitanie
 		System.out.println("\nAfficher les 10 plus grandes villes de l'Occitanie : ");
@@ -89,7 +89,7 @@ public class Application {
 		}
 
 		
-		// afficher le departement le plus peuplé de l Occitanie
+		// afficher le departement le plus peuplÃ© de l Occitanie
 		HashMap<String, Departement> mapDept = new HashMap<>();
 		
 		//recuperer les autres departements dans une map
@@ -141,10 +141,10 @@ public class Application {
 			// System.out.println(mapDept.get(key).getCodeDepartement()+" "+mapDept.get(key).getNbreHab());
 		}
 
-		System.out.println("\nLe département le plus peuplé de l' Occitanie : " + maxDept);
+		System.out.println("\nLe dÃ©partement le plus peuplï¿½ de l' Occitanie : " + maxDept);
 
-		// afficher les 10 régions les plus peuplées de France
-		System.out.println("\nAfficher les 10 régions les plus peuplées de France ");
+		// afficher les 10 rÃ©gions les plus peuplÃ©es de France
+		System.out.println("\nAfficher les 10 rÃ©gions les plus peuplÃ©es de France ");
 		HashMap<String, Region> mapRegion = new HashMap<>();
 
 		for (Ville villeRegion : listeVille) {
@@ -166,15 +166,15 @@ public class Application {
 		
 		listeRegion.addAll(mapRegion.values());
 	
-		//tri population plus eleve par region
+		//tri population plus Ã©leve par region
 		Collections.sort(listeRegion, new ComparatorRegion());
 		
 		for (int i = 0; i < 10; i++) {
 			System.out.println(listeRegion.get(i));
 		}
 		
-		// afficher les 10 départements les plus peuplées de France
-		System.out.println("\nAfficher les 10 départements les plus peuplés de France ");
+		// afficher les 10 dÃ©partements les plus peuplÃ©es de France
+		System.out.println("\nAfficher les 10 dÃ©partements les plus peuplÃ©s de France ");
 		//creation liste departement avec la population par departement
 		List<Departement> listeDeptTotal = new ArrayList<Departement>();
 		
@@ -189,7 +189,7 @@ public class Application {
 		}
 				
 		
-		System.out.println("\nAfficher les 10 villes les plus peuplées de France ");
+		System.out.println("\nAfficher les 10 villes les plus peuplÃ©es de France ");
 		Collections.sort(listeVille, new ComparatorPlusGrandeVille());
 		for (int i = 0; i < 10; i++) {
 			System.out.println(listeVille.get(i).getNomCommune()+" - "+listeVille.get(i).getPopulation()+" hab");
