@@ -7,7 +7,7 @@ import java.util.Date;
 public class TestCalendar {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// affichage date calendar
 		
 		Calendar cal = Calendar.getInstance();
 		

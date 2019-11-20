@@ -7,7 +7,7 @@ import java.util.Date;
 public class TestDates {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//affichage date
 		
 		Date date = new Date();
 		date.setHours(23);
