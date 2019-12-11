@@ -1,20 +1,20 @@
 package fr.diginamic.banque.entites;
 
 /**
- * Liste les méthodes obligatoires que doit posséder un objet géométrique
+ * Liste les mÃ©thodes obligatoires que doit possÃ©der un objet gÃ©omÃ©trique
  * 
  * @author DIGINAMIC
  */
 public interface ObjetGeometrique {
 	/**
-	 * Retourne le périmètre d’une forme géométrique
+	 * Retourne le  pÃ©rimÃ¨tre d'une forme gÃ©omÃ©trique
 	 * @return double
 	 */
 	double perimetre();
 
 	/**
 	 * Permet de sauvegarder un nouveau compte
-	 * @param nvCompte nouveau compte à sauvegarder
+	 * @param nvCompte nouveau compte Ã  sauvegarder
 	 */
 	double surface();
 }

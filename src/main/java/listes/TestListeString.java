@@ -6,12 +6,12 @@ import java.util.Iterator;
 import java.util.List;
 
 /***
- * Dans le package listes, créez une classe TestListeString exécutable. Dans cette classe instanciez une ArrayList de String contenant les éléments suivants : 
+ * Dans le package listes, crÃ©ez une classe TestListeString exÃ©cutable. Dans cette classe instanciez une ArrayList de String contenant les Ã©lÃ©ments suivants : 
  	o Nice, Carcassonne, Narbonne, Lyon, Foix, Pau, Marseille, Tarbes
  * Recherchez la ville dans cette liste qui a le plus grand nombre de lettres
- * Modifiez le contenu de la liste de manière à mettre tous les noms de villes en majuscules. 
+ * Modifiez le contenu de la liste de maniÃ¨re Ã  mettre tous les noms de villes en majuscules. 
  * Supprimez de la liste les villes dont le nom commence par la lettre N. 
- * Affichez la liste résultante
+ * Affichez la liste rÃ©sultante
  * 
  * @author audrey
  *

@@ -7,7 +7,7 @@ public class TestPersonne {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		AdressePostale a = new AdressePostale(5,"des Maréchaux",44100,"Nantes");
+		AdressePostale a = new AdressePostale(5,"des MarÃ©chaux",44100,"Nantes");
 		Personne p1 = new Personne("Lopez","Elodie",a);
 
 		AdressePostale b = new AdressePostale(85,"d'Antrain",35700,"Rennes");
@@ -28,7 +28,7 @@ public class TestPersonne {
 		
 		p2.ModifNom("Javasun");
 		p2.ModifPrenom("Laurent");
-		AdressePostale b2 = new AdressePostale(41,"rue des étoiles",34500,"Béziers");
+		AdressePostale b2 = new AdressePostale(41,"rue des Ã©toiles",34500,"BÃ©ziers");
 		p2.ModifAdresse(b2);
 		
 		System.out.println(p2.adresse.numeroRue+" "+p2.adresse.libelleVoie);

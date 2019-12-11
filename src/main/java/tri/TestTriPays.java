@@ -9,11 +9,11 @@ import sets.Pays;
 
 /***
  * Creez un package tri.
- * Reprenez la classe Pays du TP précédent et implémentez l’interface Comparable<Pays>.
- * Implémentez la méthode compareTo de manière à ce que le tri se fasse sur le nom du pays (par ordre alphabétique)
- * Creez une ArrayList et remplissez là avec l’ensemble des pays du TP précédent
+ * Reprenez la classe Pays du TP prÃ©cÃ©dent et implÃ©mentez l'interface Comparable<Pays>.
+ * ImplÃ©mentez la mÃ©thode compareTo de maniÃ¨re Ã  ce que le tri se fasse sur le nom du pays (par ordre alphabÃ©tique)
+ * Creez une ArrayList et remplissez la avec l'ensemble des pays du TP prÃ©cÃ©dent
  * Triez la liste
- * Affichez le résultat afin de vérifier que les pays sont bien triés dans l’ordre alphabétique
+ * Affichez le rÃ©sultat afin de vÃ©rifier que les pays sont bien triÃ©s dans l'ordre alphabÃ©tique
  * @author audrey
  *
  */

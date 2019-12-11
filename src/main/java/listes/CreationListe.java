@@ -5,7 +5,7 @@ import java.util.*;
 public class CreationListe {
 
 	public static void main(String[] args) {
-		//creer une liste d entiers de 0 à 100
+		//creer une liste d entiers de 0 Ã  100
 
 		
 		List<Integer> liste = new ArrayList<Integer>();

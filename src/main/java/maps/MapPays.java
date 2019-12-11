@@ -9,11 +9,11 @@ import java.util.Set;
 import sets.Pays;
 
 /***
- * Creez une classe exécutable MapPays
- * Dans ce TP nous allons retravailler avec la classe Pays et les informations des TPs précédent.
- * Dans cette classe, creez une map permettant de stocker les instances de pays (valeur) en fonction de leur nom (clé).
- * Recherchez et supprimez le pays qui a le moins d’habitants
- * Affichez l’ensemble des pays restants
+ * Creez une classe exÃ©cutable MapPays
+ * Dans ce TP nous allons retravailler avec la classe Pays et les informations des TPs prÃ©cÃ©dent.
+ * Dans cette classe, creez une map permettant de stocker les instances de pays (valeur) en fonction de leur nom (clÃ©).
+ * Recherchez et supprimez le pays qui a le moins d'habitants
+ * Affichez l'ensemble des pays restants
  * @author audrey
  *
  */

@@ -4,11 +4,11 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 /***
- * Soit la classe exécutable suivante : 
- 	o Dans cette classe, la map nommée mapVilles contient les noms des préféctures stockés par numéro de département. 
- * Tâches à réaliser : 
+ * Soit la classe exÃ©cutable suivante : 
+ 	o Dans cette classe, la map nommÃ©e mapVilles contient les noms des prÃ©fÃ©ctures stockÃ©s par numÃ©ro de dÃ©partement. 
+ * Taches  Ã   rÃ©aliser : 
  * Ajouter dans mapVilles les informations pour Lille,Lyon et Bordeaux
- * Mettre en place une boucle pour afficher l'ensemble des clés contenues dans la map
+ * Mettre en place une boucle pour afficher l'ensemble des clÃ©s contenues dans la map
  * Mettre en place une boucle pour afficher l'ensemble des valeurs contenues dans la map
  * Afficher la taille de la map
  * 
@@ -31,8 +31,8 @@ public class CreationEtManipulationMap {
 		mapVilles.put(69, "Lyon"); 
 		mapVilles.put(33, "Bordeaux");
 		
-		//afficher toutes les clés de la map
-		System.out.println("Clés de la map :");
+		//afficher toutes les clÃ©s de la map
+		System.out.println("ClÃ©s de la map :");
 		Iterator<Integer> keyVille = mapVilles.keySet().iterator();
 		while (keyVille.hasNext()){
 			System.out.println(keyVille.next());

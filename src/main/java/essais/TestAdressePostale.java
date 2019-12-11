@@ -7,7 +7,7 @@ public class TestAdressePostale {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		AdressePostale a = new AdressePostale(5,"des Maréchaux",44100,"Nantes");
+		AdressePostale a = new AdressePostale(5,"des MarÃ©chaux",44100,"Nantes");
 	
 		AdressePostale b = new AdressePostale(85,"d'Antrain",35700,"Rennes");
 		

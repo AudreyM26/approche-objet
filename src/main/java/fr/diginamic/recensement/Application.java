@@ -63,7 +63,7 @@ public class Application {
 		System.out.println("La plus petite commune de l'Hérault est : " + petiteCommune + "\n");
 
 		// afficher les 10 plus grandes villes du departement 34
-		System.out.println("\nAfficher les 10 plus grandes villes de l'H�rault : ");
+		System.out.println("\nAfficher les 10 plus grandes villes de l'Hérault : ");
 		Collections.sort(listeVilleDpt, new ComparatorPlusGrandeVille());
 
 		for (int i = 0; i < 10; i++) {
@@ -71,14 +71,14 @@ public class Application {
 		}
 
 		// afficher les 10 plus petites villes du departement 34
-		System.out.println("\nAfficher les 10 plus petites villes de l'H�rault : ");
+		System.out.println("\nAfficher les 10 plus petites villes de l'Hérault : ");
 		Collections.sort(listeVilleDpt, new ComparatorPlusPetiteVille());
 
 		for (int i = 0; i < 10; i++) {
 			System.out.println(listeVilleDpt.get(i));
 		}
 
-		System.out.println("\nLa population totale de la r�gion Occitanie : " + populationTotaleRegion + " hab.");
+		System.out.println("\nLa population totale de la région Occitanie : " + populationTotaleRegion + " hab.");
 
 		// afficher les 10 villes plus importantes de l Occitanie
 		System.out.println("\nAfficher les 10 plus grandes villes de l'Occitanie : ");
@@ -141,7 +141,7 @@ public class Application {
 			// System.out.println(mapDept.get(key).getCodeDepartement()+" "+mapDept.get(key).getNbreHab());
 		}
 
-		System.out.println("\nLe département le plus peupl� de l' Occitanie : " + maxDept);
+		System.out.println("\nLe département le plus peuplé de l' Occitanie : " + maxDept);
 
 		// afficher les 10 régions les plus peuplées de France
 		System.out.println("\nAfficher les 10 régions les plus peuplées de France ");

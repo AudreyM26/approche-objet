@@ -7,18 +7,18 @@ import java.util.List;
 import java.util.Set;
 
 
-
 /***
- * Créez une classe Pays possédant 3 attributs : nom, nb d’habitants, PIB/habitant.
- * Créez un HashSet de pays contenant les pays suivants avec les informations correctes de nombre d’habitants et de PIB/Hab:
+ * CrÃ©ez une classe Pays possÃ©dant 3 attributs : nom, nb d'habitants, PIB/habitant.
+ * CrÃ©ez un HashSet de pays contenant les pays suivants avec les informations correctes de nombre d'habitants et de PIB/Hab:
  * Recherchez le pays avec le PIB/habitant le plus important
  * Recherchez le pays avec le PIB total le plus important
  * Modifiez le contenu du HashSet pour mettre en majuscule le pays qui a le PIB total le plus petit
  * Supprimez le pays dont le PIB total est le plus petit
- * Affichez l’ensemble des pays ainsi modifiés avec leur nom, nombre d’habitants et PIB total
+ * Affichez l'ensemble des pays ainsi modifiÃ©s avec leur nom, nombre d'habitants et PIB total
  * @author audrey
  *
  */
+
 
 public class TestPaysPib {
 
@@ -75,8 +75,8 @@ public class TestPaysPib {
 		}
 		
 		
-		System.out.println("Pays avec PIB/habitants plus élevé : "+PaysPIBHabMax);
-		System.out.println("Pays avec PIB total plus élevé : "+PaysPIBTotal);
+		System.out.println("Pays avec PIB/habitants plus Ã©levÃ© : "+PaysPIBHabMax);
+		System.out.println("Pays avec PIB total plus Ã©levÃ© : "+PaysPIBTotal);
 		
 		
 		Iterator<Pays> iterPaysMaj = pays.iterator();
@@ -88,7 +88,7 @@ public class TestPaysPib {
 			if(pMaj.totalPIB() == minTotalPIB){
 				String nomMaj = pMaj.getNom().toUpperCase();
 				pMaj.setNom(nomMaj);
-				System.out.println("Pays avec PIB total moins elevé : "+pMaj.getNom()+"\n");
+				System.out.println("Pays avec PIB total moins elevÃ© : "+pMaj.getNom()+"\n");
 				
 				//supprimer le pays qui a le pib total plus petit 
 				pays.remove(pMaj);

@@ -54,8 +54,8 @@ public class TestBanque {
 		
 		System.out.println("compare compte2 et compte3 "+compte3.equals(compte2));
 		
-		System.out.println("\nPS:compare compte1 et compte2 retour false car pointe vers 2 zones mémoires différentes si equals non redéfinie dans Compte");
-		System.out.println("PS:compare compte2 et compte3 retour true car pointe vers la meme zone memoire si equals non redéfinie dans Compte");
+		System.out.println("\nPS:compare compte1 et compte2 retour false car pointe vers 2 zones mÃ©moires diffÃ©rentes si equals non redÃ©finie dans Compte");
+		System.out.println("PS:compare compte2 et compte3 retour true car pointe vers la meme zone memoire si equals non redÃ©finie dans Compte");
 		
 	}
 }

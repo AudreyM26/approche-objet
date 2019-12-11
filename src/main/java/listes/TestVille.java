@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /***
- * Créez une classe Ville possédant 2 attributs : nom, nb d’habitants.
- * Créez une ArrayList de villes contenant les villes suivantes :
+ * CrÃ©ez une classe Ville possÃ©dant 2 attributs : nom, nb d'habitants.
+ * CrÃ©ez une ArrayList de villes contenant les villes suivantes :
 	o Nice, 343 000 hab.
 	o Carcassonne, 47 800 hab.
 	o Narbonne, 53 400 hab.
@@ -15,10 +15,10 @@ import java.util.Arrays;
 	o Pau, 77 200 hab.
 	o Marseille, 850 700 hab.
 	o Tarbes, 40 600 hab.
- * Recherchez et affichez la ville la plus peuplée
- * Supprimez la ville la moins peuplée
+ * Recherchez et affichez la ville la plus peuplÃ©e
+ * Supprimez la ville la moins peuplÃ©e
  * Modifiez les villes de plus de 100 000 habitants en mettant leur nom en majuscules
- * Affichez enfin la liste résultante
+ * Affichez enfin la liste rÃ©sultante
  * @author audrey
  *
  */
@@ -38,7 +38,7 @@ public class TestVille {
 			
 		}
 		
-		//parcourir la liste pour recuperer ville plus peuplée, mettre en majuscule les villes hab > 100 0000 et recupere ville moins peuplée
+		//parcourir la liste pour recuperer ville plus peuplÃ©e, mettre en majuscule les villes hab > 100 0000 et recupere ville moins peuplÃ©e
 		int maxHab = 0;
 		int minHab = 0;
 		int indexVillePeuplee = 0;
@@ -50,7 +50,7 @@ public class TestVille {
 			nb = nb.replaceAll(" ","");
 			int convertNb = Integer.parseInt(nb);
 			
-			//recuperer index ville la plus peuplée
+			//recuperer index ville la plus peuplÃ©e
 			if(convertNb > maxHab){
 				maxHab = convertNb;
 				indexVillePeuplee = i;
@@ -61,7 +61,7 @@ public class TestVille {
 				list.get(i).setNom(list.get(i).getNom().toUpperCase());
 			}
 			
-			//recuperer index ville la moins peuplée pour la supprimer
+			//recuperer index ville la moins peuplÃ©e pour la supprimer
 			if(i==0 || convertNb < minHab){
 				minHab = convertNb;
 				indexVilleMoinsPeuplee = i;
@@ -69,14 +69,14 @@ public class TestVille {
 			
 		}
 		
-		//affichage de la ville la plus peuplée
-		System.out.println("La ville la plus peuplée : "+list.get(indexVillePeuplee));
+		//affichage de la ville la plus peuplÃ©e
+		System.out.println("La ville la plus peuplÃ©e : "+list.get(indexVillePeuplee));
 		
-		//supprimer la ville la moins peuplée
+		//supprimer la ville la moins peuplÃ©e
 		//ps : attention mettre la suppression apres l affichage de la ville peuplee car sinon index n affiche pas la bonne ville
 		
-		//affichage de la ville supprimée de la liste (moins peuplée)
-		System.out.println("La ville la moins peuplée : "+list.get(indexVilleMoinsPeuplee)+"\n");
+		//affichage de la ville supprimÃ©e de la liste (moins peuplÃ©e)
+		System.out.println("La ville la moins peuplÃ©e : "+list.get(indexVilleMoinsPeuplee)+"\n");
 		list.remove(indexVilleMoinsPeuplee);
 				
 		//affichage la liste des villes et habitants

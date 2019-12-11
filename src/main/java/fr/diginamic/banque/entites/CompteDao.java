@@ -1,7 +1,7 @@
 package fr.diginamic.banque.entites;
 
 /**
- * Liste les méthodes obligatoires pour la persistence des comptes
+ * Liste les mÃ©thodes obligatoires pour la persistence des comptes
  * 
  * @author DIGINAMIC
  */
@@ -14,29 +14,29 @@ public interface CompteDao {
 
 	/**
 	 * Permet de sauvegarder un nouveau compte
-	 * @param nvCompte nouveau compte à sauvegarder
+	 * @param nvCompte nouveau compte ï¿½ sauvegarder
 	 */
 	void sauvegarder(Compte nvCompte);
 
 	/**
-	 * Supprime un compte Retourne true si la suppression a été réalisée avec
-	 * succès, false sinon.
-	 * @param numero numéro du compte à supprimer
+	 * Supprime un compte Retourne true si la suppression a Ã©tÃ© rÃ©alisÃ©e avec
+	 * succÃ¨s, false sinon.
+	 * @param numero numÃ©ro du compte Ã   supprimer
 	 */
 	boolean supprimer(int numero);
 
 	/**
-	 * Retourne true si le numéro du compte passé en paramètre existe, false
+	 * Retourne true si le numï¿½ro du compte passÃ© en paramÃ¨tre existe, false
 	 * dans le cas contraire
-	 * @param numero numéro du compte
+	 * @param numero numÃ©ro du compte
 	 * @return boolean
 	 */
 
 	boolean existe(int numero);
 
 	/**
-	 * Retourne le compte dont le numéro est passé en paramètre
-	 * @param numero numéro du compte
+	 * Retourne le compte dont le numÃ©ro est passÃ© en paramÃ¨tre
+	 * @param numero numÃ©ro du compte
 	 * @return Compte
 	 */
 	Compte getCompte(int numero);

@@ -18,7 +18,7 @@ public class TestApplicationBancaire {
 		boolean erreur;
 		
 		while(choix != 99){
-			//Bloc d'essai pour s'assurer qu'on récupère bien un entier
+			//Bloc d'essai pour s'assurer qu'on rÃ©cupÃ¨re bien un entier
 			do {
 				try {
 					
@@ -35,7 +35,7 @@ public class TestApplicationBancaire {
 	               
 	                
 			} catch (InputMismatchException e) {
-	            	System.out.println("\nCe n'est pas une valeur prise en charge, veuillez réessayer.");
+	            	System.out.println("\nCe n'est pas une valeur prise en charge, veuillez rÃ©essayer.");
 	                erreur = true;
 	                saisieChoix.next();
 	            }
@@ -63,17 +63,17 @@ public class TestApplicationBancaire {
 				break;
 				
 			case 2:
-				System.out.println("Ajout d’un nouveau compte\n");
+				System.out.println("Ajout d'un nouveau compte\n");
 				saisieNouveauCompte();
 				break;
 				
 			case 3:
-				System.out.println("Ajout d’une opération à un compte\n");
+				System.out.println("Ajout d'une opÃ©ration Ã  un compte\n");
 				saisieOperationCompte();
 				break;
 				
 			case 4:
-				System.out.println("Suppression d’un compte\n");
+				System.out.println("Suppression d'un compte\n");
 				suppOperationCompte();
 				break;
 			
@@ -93,7 +93,7 @@ public class TestApplicationBancaire {
 		System.out.println("***** Administration des comptes *****");	
 		System.out.println("1. Lister les comptes");	
 		System.out.println("2. Ajouter un nouveau compte");	
-		System.out.println("3. Ajouter une opération à un compte");	
+		System.out.println("3. Ajouter une opÃ©ration Ã  un compte");	
 		System.out.println("4. Supprimer un compte");
 		System.out.println("99. Sortir\n");
 	}
@@ -101,7 +101,7 @@ public class TestApplicationBancaire {
 	//ajouter un nouveau compte
 	public static void saisieNouveauCompte(){
 		
-		System.out.println("Veuillez saisir le numéro : ");
+		System.out.println("Veuillez saisir le numÃ©ro : ");
 		int numero = saisieChoix.nextInt();
 		
 		System.out.println("Veuillez saisir le solde initial : ");	
@@ -135,18 +135,18 @@ public class TestApplicationBancaire {
 	
 	}
 	
-	//ajouter une opération a un compte
+	//ajouter une opÃ©ration a un compte
 	public static void saisieOperationCompte(){
 		
 		//pour tester directement la fonction ajouter un compte dans le tableau
 		//daoCompte.sauvegarder(new CompteTaux(1,1522.23,1.25));
 		
-		System.out.println("Veuillez saisir le numéro : ");
+		System.out.println("Veuillez saisir le numÃ©ro : ");
 		int numeroOpe = saisieChoix.nextInt();
 		
 		if(daoCompte.existe(numeroOpe)){
 			
-			System.out.println("Veuillez saisir le type d’opération (1 : CREDIT, 2 : DEBIT) :");
+			System.out.println("Veuillez saisir le type d'opÃ©ration (1 : CREDIT, 2 : DEBIT) :");
 			int typeOpe = saisieChoix.nextInt();
 			
 			System.out.println("Veuillez saisir la date :");
@@ -176,18 +176,18 @@ public class TestApplicationBancaire {
 		/*daoCompte.sauvegarder(new Compte(1,1522.23));
 		daoCompte.sauvegarder( new CompteTaux(2,541.23,1.25));*/
 				
-		System.out.println("Veuillez saisir le numéro : ");
+		System.out.println("Veuillez saisir le numÃ©ro : ");
 		int numeroOpe = saisieChoix.nextInt();
 		boolean suppValid =false;
 		
 		if(daoCompte.existe(numeroOpe)){
 			suppValid = daoCompte.supprimer(numeroOpe);
 		}else{
-			System.out.println("Le numéro de compte saisi n'existe pas\n");
+			System.out.println("Le numÃ©ro de compte saisi n'existe pas\n");
 		}
 		
 		if(suppValid){
-			System.out.println("Le compte "+numeroOpe+" a été supprimé");
+			System.out.println("Le compte "+numeroOpe+" a Ã©tÃ© supprimÃ©");
 		}
 	}
 }

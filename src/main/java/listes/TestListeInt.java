@@ -5,15 +5,15 @@ import java.util.List;
 import java.util.Collections;
 
 /***
- * Créer un nouveau package listes. Dans le package listes, créez une classe
- * TestListeInt exécutable. Dans cette classe instanciez une ArrayList d’entiers
- * et placez y les éléments suivants : -1, 5, 7, 3, -2, 4, 8, 5 
- * Affichez tous les éléments de la liste 
+ * CrÃ©er un nouveau package listes. Dans le package listes, crÃ©ez une classe
+ * TestListeInt exÃ©cutable. Dans cette classe instanciez une ArrayList d'entiers
+ * et placez y les Ã©lÃ©ments suivants : -1, 5, 7, 3, -2, 4, 8, 5 
+ * Affichez tous les Ã©lÃ©ments de la liste 
  * Affichez la taille de la liste 
- * Recherchez et affichez le plus grand élément de la liste 
- * Supprimez le plus petit élément de la liste et affichez le résultat 
- * Recherchez tous les éléments négatifs et modifiez les de manière à ce qu’ils deviennent positifs. 
- * Affichez enfin la liste résultante
+ * Recherchez et affichez le plus grand Ã©lÃ©ment de la liste 
+ * Supprimez le plus petit Ã©lÃ©ment de la liste et affichez le rÃ©sultat 
+ * Recherchez tous les Ã©lÃ©ments nÃ©gatifs et modifiez les de maniÃ¨re Ã  ce qu'ils deviennent positifs. 
+ * Affichez enfin la liste rÃ©sultante
  * 
  * @author audrey
  *
@@ -60,7 +60,7 @@ public class TestListeInt {
 	    	}
 		}
 	   
-	    System.out.println("Tableau modifié");
+	    System.out.println("Tableau modifiÃ©");
 	    for (Integer entier: liste) {
 			System.out.println(entier);
 		}

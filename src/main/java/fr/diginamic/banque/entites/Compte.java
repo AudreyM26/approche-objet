@@ -86,18 +86,18 @@ public class Compte {
 	//afficher les elements du compte : numero, solde initial, solde, nbre ope, montant selon type d operations
 	public String toString(){
 		
-		String texte = "Numero : "+getNumCompte()+" - Nombre d'opérations : "+nbreOpe+" - Solde : "+getSolde()+"€";
+		String texte = "Numero : "+getNumCompte()+" - Nombre d'opÃ©rations : "+nbreOpe+" - Solde : "+getSolde()+"â‚¬";
 
 		
-		//String texte = "Numero de compte : "+getNumCompte()+"\nSolde initial : "+getSoldeInitial()+" €\nSolde de compte : "+getSolde()+" €\nOperations : "+nbreOpe+"\n";
+		//String texte = "Numero de compte : "+getNumCompte()+"\nSolde initial : "+getSoldeInitial()+" ï¿½\nSolde de compte : "+getSolde()+" ï¿½\nOperations : "+nbreOpe+"\n";
 		/*
 		if(nbreOpe > 0){
 			if(getSolde("Credit") > 0){
-				texte = texte+"Total crédit : "+getSolde("Credit")+" €\n";
+				texte = texte+"Total crÃ©dit : "+getSolde("Credit")+"â‚¬\n";
 			}
 		
 			if(getSolde("Debit") > 0){
-				texte = texte+"Total débit : "+getSolde("Debit")+"€\n";
+				texte = texte+"Total dÃ©bit : "+getSolde("Debit")+"â‚¬\n";
 			}
 		}*/
 		return 	texte;

@@ -25,7 +25,7 @@ public class Rectangle implements ObjetGeometrique{
 
 	//redefinir toString pour afficher le perimetre et surface du rectangle
 	public String toString(){
-		String texte = "Rectangle de "+longueur+" x "+largeur+"\nPérimètre = "+perimetre()+"\nSurface = "+surface()+"\n";
+		String texte = "Rectangle de "+longueur+" x "+largeur+"\nPÃ©rimÃ¨tre = "+perimetre()+"\nSurface = "+surface()+"\n";
 		return texte;
 	}
 }

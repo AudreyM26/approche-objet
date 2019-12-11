@@ -15,10 +15,10 @@ public class TestDates {
 		date.setSeconds(59);
 		
 		SimpleDateFormat formattage = new SimpleDateFormat("dd/MM/yyyy");
-		System.out.println("Date du jour format jour/mois/année\n"+formattage.format(date)+"\n");
+		System.out.println("Date du jour format jour/mois/annÃ©e\n"+formattage.format(date)+"\n");
 	
 	    SimpleDateFormat formattageYearHour = new SimpleDateFormat("yyy/MM/dd HH:mm:ss");
-		System.out.println("Date du jour format année/mois/jour heure:minute:seconde\n"+formattageYearHour.format(date)+"\n");
+		System.out.println("Date du jour format annÃ©e/mois/jour heure:minute:seconde\n"+formattageYearHour.format(date)+"\n");
 		
 		SimpleDateFormat formattageHeure = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 		System.out.println("Date du jour format jj-mm-aaaa hh:mm:ss\n"+formattageHeure.format(date)+"\n");

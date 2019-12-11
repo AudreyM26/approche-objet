@@ -4,16 +4,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 /***
- * Voici une liste d’employés avec leur salaire respectifs :
-	• Paul – 1750 €
-	• Hicham – 1825 €
-	• Yu – 2250 €
-	• Ingrid – 2015 €
-	• Chantal – 2418 €
- * Tâches à réaliser :
- * Creez une classe exécutable appelée CreationMap :
-	o Créez une map nommée mapSalaires et qui permet de stocker les informations de salaire (valeur) en fonction du prénom de la personne (clé).
-	o Une fois la map créée, affichez sa taille
+ * Voici une liste d'employÃ©s avec leur salaire respectifs :
+	 Paul Ã  1750 
+	 Hicham Ã  1825
+	 Yu Ã  2250 
+	 Ingrid Ã  2015 
+	 Chantal Ã  2418 
+ * Taches Ã  rÃ©aliser :
+ * Creez une classe exï¿½cutable appelï¿½e CreationMap :
+	o CrÃ©ez une map nommÃ©e mapSalaires et qui permet de stocker les informations de salaire (valeur) en fonction du prÃ©nom de la personne (clÃ©).
+	o Une fois la map crÃ©Ã©e, affichez sa taille
  * @author audrey
  *
  */
@@ -24,7 +24,7 @@ public class CreationMap {
 
 		Map<String, Double> mapSalaires = new HashMap<>();
 		
-		// association d'une clé à chaque élément
+		// association d'une clÃ© Ã  chaque Ã©lÃ©ment
 		mapSalaires.put("Paul",(double)1750);
 		mapSalaires.put("Hicham",(double)1825);
 		mapSalaires.put("Yu",(double)2250);

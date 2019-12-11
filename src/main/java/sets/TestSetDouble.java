@@ -6,12 +6,13 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 /***
- * Créer un nouveau package sets. Dans le package sets, créez une classe
- * TestSetDouble exécutable. Dans cette classe instanciez un HashSet de doubles
- * et placez y les éléments suivants : o 1.5, 8.25, -7.32, 13.3, -12.45, 48.5,
- * 0.01 Affichez tous les éléments de la collection Recherchez le plus grand
- * élément de la collection Supprimez le plus petit élément de la collection
- * Affichez enfin le contenu de la collection ainsi modifiée
+ * CrÃ©er un nouveau package sets. Dans le package sets, crÃ©ez une classe
+ * TestSetDouble exÃ©cutable. Dans cette classe instanciez un HashSet de doubles et placez y les Ã©lÃ©ments suivants :
+ *  o 1.5, 8.25, -7.32, 13.3, -12.45, 48.5,0.01 
+ * Affichez tous les Ã©lÃ©ments de la collection 
+ * Recherchez le plus grand Ã©lÃ©ment de la collection 
+ * Supprimez le plus petit Ã©lÃ©ment de la collection
+ * Affichez enfin le contenu de la collection ainsi modifiÃ©e
  * 
  * @author audrey
  *
@@ -50,7 +51,7 @@ public class TestSetDouble {
 		//supprimer valeur min
 		set.remove(valMin);
 		
-		System.out.println("\nAffichage des éléments du set modifié : ");
+		System.out.println("\nAffichage des Ã©lÃ©ments du set modifiÃ© : ");
 		Iterator<Double> iter2 = set.iterator();
 		while (iter2.hasNext()) {
 
