@@ -1,7 +1,5 @@
 package fr.diginamic.testexceptions;
 
-import org.apache.commons.lang3.math.NumberUtils;
-
 public class Operation {
 	
 	static double diviser(double a,double b) throws DivException {

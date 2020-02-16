@@ -1,5 +1,4 @@
 package utils;
-import java.lang.*;
 import java.util.Scanner;
 
 public class ConversionNombre {
@@ -23,6 +22,7 @@ public class ConversionNombre {
 		
 		System.out.println("convertir chaine en int : "+stringNumber);
 		System.out.println("resultat du max entre deux nombres "+result);
+		saisie.close();
 	}
 	
 	public static int maxNombres(int pA, int pB) {
